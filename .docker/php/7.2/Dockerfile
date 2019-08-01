@@ -38,4 +38,6 @@ ENV PATH "/var/www/.magento-cloud/bin:$PATH"
 
 WORKDIR /var/www/html
 
+VOLUME /var/www/html
+
 CMD ["entrypoint.sh"]
