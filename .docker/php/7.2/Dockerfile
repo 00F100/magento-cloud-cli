@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     libjpeg62-turbo-dev \
     libfreetype6-dev \
     jpegoptim optipng pngquant gifsicle \
+    libxml2-dev \
     && mkdir -p /var/www/html \
     && apt-get clean && rm -rf /var/lib/apt/lists/* \
     && yes '' | pecl install -f mcrypt-1.0.2 \

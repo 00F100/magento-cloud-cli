@@ -8,7 +8,7 @@ do
         exit
     else
         if [ ! -z "$command" ]; then
-            magento-cloud "$command"
+            magento-cloud $command
         fi
     fi
 done
